@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="d3.js"></script>
+    <title>Attrapez-les tous</title>
+
+</head>
+
+<body>
+    <div class="titre">
+        <h2>Attrapez-les tous !</h2>
+    </div>
+    <p>Score: <span id='score'>0</span></p>
+    <svg width="92vw" height="95vh" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink%22%3E" style="background-image:url('img/grass.png');">
+        <rect x="-55" y="0" width="50" height="100"></rect>
+        
+        <g>
+            <image id="red"
+                xlink:href="https://cdn.discordapp.com/attachments/856648296298184774/894551953361752094/persoSprite.png"
+                x="-30" y="50" height="12" width="12">
+        </g>
+        <defs>
+            <g id="ennemi">
+                <image id="pikachu" href="img/pikachu.png" height="10" width="10" x="0" y="0"></image>
+                <!-- x=150 max et -10 minimum-->
+            </g>
+            <g id="def_pokeball">
+                <image href="img/pokeball.png" id="pokeball" width="7" height="7" x="0" y="-2" />
+            </g>
+            <g id="def_eclair">
+                <image href="img/bolt.png" id="bolt" width="7" height="7" x="0" y="-2" />
+            </g>
+            
+        </defs>
+        <g>
+            <image id="life1" href="img/heart.png" height="10" width="10" x="-50" y="0"></image>
+            <image id="life2" href="img/heart.png" height="10" width="10" x="-40" y="0"></image>
+            <image id="life3" href="img/heart.png" height="10" width="10" x="-30" y="0"></image>
+        </g>
+       
+    </svg>
+    <h3 style="margin: auto; text-align: center;">Sally Niasse / Anna Maria Lannaud / Luca Aubgnat MMI2</h3>
+    <script src="app.js"></script>
+</body>
+
+<style>
+    p {
+        margin: 0;
+        margin-left: 40%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+
+    .zoneDeJeu {
+        text-align: center;
+    }
+
+    .titre {
+        display: flex;
+        justify-content: center;
+    }
+
+    h2 {
+        text-align: center;
+        border: solid #606069;
+        border-width: 2px 20px 2px 2px;
+        display: inline;
+        padding: .5% 4%;
+        outline: 2px solid black;
+        outline-offset: 2px;
+        font-family: 'VT323', monospace;
+        font-size: 2rem;
+        margin: 1%;
+    }
+
+</style>
+
+</html>
